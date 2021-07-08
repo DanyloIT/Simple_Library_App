@@ -13,4 +13,6 @@ public interface AuthorService {
     Optional<Author> getById(Long id);
 
     List<Author> getAll();
+
+    List<Author> getAllBookContains(String title);
 }

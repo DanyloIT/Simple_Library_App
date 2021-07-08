@@ -43,4 +43,9 @@ public class AuthorController {
     public List<Author> getAll() {
         return authorService.getAll();
     }
+
+    @GetMapping("/title")
+    public List<Author> getAllWhichBooksContains(@RequestParam String title) {
+        return authorService.getAllBookContains(title);
+    }
 }
