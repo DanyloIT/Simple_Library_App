@@ -31,7 +31,6 @@ public class AuthorServiceImpl implements AuthorService {
         authorRepository.update(name, lastName, book, id);
     }
 
-
     @Override
     public Optional<Author> getById(Long id) {
         return authorRepository.findById(id);
