@@ -14,7 +14,7 @@ Layering is to achieve "high cohesion, low coupling". The idea of "divide and co
 - Download this project (clone and open in your IDE).
 - Run SimpleLibraryAppApplication
 
-## 🔗 There are different URL to work with:
+## 🔗There are different URL to work with:
 - http://localhost:8080/inject to inject some mock data
 - http://localhost:8080/authors (POST) to create new author
 - http://localhost:8080/authors/id both PUT and GET methods to update and read data. Id here is the id of author
