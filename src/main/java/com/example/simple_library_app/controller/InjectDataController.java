@@ -14,11 +14,9 @@ import java.util.List;
 @RequestMapping("/inject")
 public class InjectDataController {
     private final BookService bookService;
-    private final AuthorService authorService;
 
-    public InjectDataController(BookService bookService, AuthorService authorService) {
+    public InjectDataController(BookService bookService) {
         this.bookService = bookService;
-        this.authorService = authorService;
     }
 
     @GetMapping

@@ -44,10 +44,9 @@ public class AuthorServiceImpl implements AuthorService {
     @Override
     public List<Author> getAllBookContains(String title) {
         List<Book> bookList = bookRepository.findAllByTitleContains(title);
-        List<Author> authorList = bookList.stream()
+        return bookList.stream()
                 .map(Book::getAuthors)
                 .flatMap(List::stream)
                 .collect(Collectors.toList());
-        return authorList;
     }
 }
